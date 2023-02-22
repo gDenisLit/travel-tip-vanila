@@ -1,0 +1,9 @@
+.wrapper-map {
+  position: relative;
+  flex-basis: 50%;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://kit.fontawesome.com/0d3f998bf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>TravelTip</title>
+</head>
+
+    <header>
+        <div class="header flex space-between main-layout">
+            <div class="logo-box">
+                <img src="./assets/img/logo.png" alt="" />
+            </div>
+
+            <div class="search flex">
+                <form action="" class="search-location" onsubmit="onSearchLocation(event)">
+                    <input class="input search-input" id="search" type="search" placeholder="Search" />
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="btns-header flex">
+                    <button class="btn btn-user-pos" onclick="onGoToUserPos()">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </button>
+                    <button title="Copy url" class="btn btn-copy" onclick="onCopyUrl()">
+                        <i class="fa-solid fa-clipboard"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-layout flex">
+        <div class="locations-container">
+            <div class="locations-wrapper">
+                <details class="add-location flex space-between">
+                    <summary><i class="fa-solid fa-plus"></i> Add new Location</summary>
+                    <form class="add-loc" onsubmit="onAddLoc(event)">
+                        <input class="input loc-name" type="text" id="name" placeholder="Location Name" />
+                        <button class="btn">Add</button>
+                    </form>
+                </details>
+                <div class="locations"></div>
+            </div>
+            <div class="spinner hide"></div>
+            <div class="weather-container">
+                <div class="weather">
+                    <p>
+                        <i class="fa-solid fa-cloud-meatball"></i>
+                        <span class="weather-main">Cloudy</span>
+                        <span class="weather-state">IL</span>
+                    </p>
+                    <p>
+                        <span class="temp">90</span>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-temperature-empty"></i> min
+                        <span class="min-temp">30°</span>
+                        <i class="fa-solid fa-temperature-high"></i> max
+                        <span class="max-temp">90°</span>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-wind"></i> wind
+                        <span class="speed">30</span> m/s
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-map">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-box">
+            <img src="./assets/img/logo.png" alt="" />
+        </div>
+        <p>© Coffeeright - TravelTip - CaMay2022 - Guy Kadosh & Denis Lit</p>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

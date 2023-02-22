@@ -1,0 +1,65 @@
+@media (max-width: 980px) {
+  html {
+    font-size: 90%;
+  }
+
+  .main-layout {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 80%;
+  }
+
+  .header.flex {
+    justify-content: space-around;
+  }
+  .main-layout {
+    max-width: 760px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  .wrapper-map {
+    margin-block-end: 2rem;
+  }
+
+  #map {
+    height: 350px;
+  }
+
+  .locations-container {
+    width: 100%;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  form.search-location {
+    display: flex;
+
+    margin-inline-end: 0;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+  .input {
+    max-width: 100px;
+    margin-inline-end: 0.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

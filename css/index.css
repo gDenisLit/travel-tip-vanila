@@ -1,0 +1,20 @@
+/* SETUP  */
+@import 'setup/typography.css';
+@import 'setup/vars.css';
+
+/* BASE */
+@import 'basic/base.css';
+@import 'basic/layout.css';
+@import 'basic/helpers.css';
+@import 'basic/buttons.css';
+
+/* COMPONENTS  */
+@import 'components/header.css';
+@import 'components/map.css';
+@import 'components/locations.css';
+@import 'components/weather.css';
+@import 'components/spinner.css';
+@import 'components/footer.css';
+
+/* MEDIA  */
+@import 'mq/mq.css';
